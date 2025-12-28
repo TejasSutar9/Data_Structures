@@ -1,6 +1,6 @@
-# Linked List in C
+# Linked List in C++
 
-This folder contains implementations of different types of linked lists in C.
+This folder contains implementations of different types of linked lists in C++.
 
 ## Programs Included
 - Singly Linear Linked List
