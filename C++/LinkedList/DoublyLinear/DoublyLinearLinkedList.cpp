@@ -1,7 +1,7 @@
 /*
 Program Name : Doubly Linear Linked List
 Language     : C++
-Description  : Implementation of Singly Linear Linked List with basic operations
+Description  : Implementation of Doubly Linear Linked List with basic operations
 Author       : Tejas P Sutar
 
 Operations:
@@ -300,3 +300,4 @@ int main()
 
     return 0;
 }
+
