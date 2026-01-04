@@ -36,8 +36,9 @@ void ReplaceEven(PNODE first)
     while (first != NULL)
     {
         if (first->data % 2 == 0)
+        {
             first->data = 0;
-
+        }
         first = first->next;
     }
 }
@@ -93,4 +94,5 @@ int main()
 
     return 0;
 }
+
 
