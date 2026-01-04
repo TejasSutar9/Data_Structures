@@ -22,7 +22,9 @@ void InsertFirst(PPNODE first, int no)
     newn->next = NULL;
 
     if (*first == NULL)
+    {
         *first = newn;
+    }
     else
     {
         newn->next = *first;
@@ -110,3 +112,4 @@ int main()
 
     return 0;
 }
+
