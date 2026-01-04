@@ -34,17 +34,19 @@ void InsertFirst(PPNODE first, int no)
 }
 
 // Search number in linked list
-bool Search(PNODE first, int no)
+bool Search(PNODE first , int no)
 {
+    bool bPresent = false;
     while (first != NULL)
     {
-        if (first->data == no)
+        if(first -> data == no)
         {
-            return true;
+            bPresent = true;
+            break;
         }
-        first = first->next;
+        first = first -> next;
     }
-    return false;
+    return bPresent;
 }
 
 // Display linked list
@@ -100,3 +102,4 @@ int main()
 
     return 0;
 }
+
