@@ -31,29 +31,6 @@ void InsertFirst(PPNODE first, int no)
     }
 }
 
-// Count nodes present at every Nth position
-int DisplayNthPos(PNODE first, int n)
-{
-    int iPos = 1;
-    int iCount = 0;
-
-    if (n <= 0)
-    {
-        return 0;
-    }
-
-    while (first != NULL)
-    {
-        if (iPos % n == 0)
-        {
-            iCount++;
-        }
-        iPos++;
-        first = first->next;
-    }
-    return iCount;
-}
-
 // Display all elements of the linked list
 void Display(PNODE first)
 {
@@ -73,6 +50,29 @@ int Count(PNODE first)
     while (first != NULL)
     {
         iCount++;
+        first = first->next;
+    }
+    return iCount;
+}
+
+// Count nodes present at every Nth position
+int DisplayNthPos(PNODE first, int n)
+{
+    int iPos = 1;
+    int iCount = 0;
+
+    if (n <= 0)
+    {
+        return 0;
+    }
+
+    while (first != NULL)
+    {
+        if (iPos % n == 0)
+        {
+            iCount++;
+        }
+        iPos++;
         first = first->next;
     }
     return iCount;
@@ -104,6 +104,7 @@ int main()
 
     return 0;
 }
+
 
 
 
