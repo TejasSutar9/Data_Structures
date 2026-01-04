@@ -37,9 +37,10 @@ void ReplaceOdd(PNODE first)
 {
     while (first != NULL)
     {
-        if (first->data % 2 != 0)
+        if ((first->data % 2) != 0)
+        {
             first->data = 1;
-
+        }
         first = first->next;
     }
 }
@@ -95,4 +96,5 @@ int main()
 
     return 0;
 }
+
 
