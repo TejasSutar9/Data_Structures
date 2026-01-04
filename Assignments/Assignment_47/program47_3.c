@@ -42,17 +42,20 @@ void SumDigits(PNODE first)
         int iSum = 0;
 
         if (temp == 0)
+        {
             iSum = 0;
+        }
         else
         {
             while (temp != 0)
             {
-                iSum += temp % 10;
+                int rem = temp % 10;
+                iSum = iSum + rem;
                 temp = temp / 10;
             }
         }
 
-        printf("| %-6d | -> %d\n", iNum, iSum);
+        printf("| %-5d | -> %d\n", iNum, iSum);
         first = first->next;
     }
 }
@@ -106,4 +109,5 @@ int main()
 
     return 0;
 }
+
 
