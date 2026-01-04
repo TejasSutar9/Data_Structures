@@ -38,7 +38,9 @@ int DisplayNthPos(PNODE first, int n)
     int iCount = 0;
 
     if (n <= 0)
+    {
         return 0;
+    }
 
     while (first != NULL)
     {
@@ -102,5 +104,6 @@ int main()
 
     return 0;
 }
+
 
 
