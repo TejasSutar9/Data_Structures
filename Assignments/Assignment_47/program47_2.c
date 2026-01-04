@@ -44,7 +44,9 @@ void CountDigits(PNODE first)
         int iCount = 0;
 
         if (temp == 0)
+        {
             iCount = 1;
+        }
         else
         {
             while (temp != 0)
@@ -108,4 +110,5 @@ int main()
 
     return 0;
 }
+
 
