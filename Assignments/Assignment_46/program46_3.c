@@ -36,7 +36,14 @@ void InsertFirst(PPNODE first, int no)
 // Check if list is empty
 bool IsEmpty(PNODE first)
 {
-    return (first == NULL);
+    bool IsEmpty = false;
+
+    if (first == NULL)
+    {
+        IsEmpty = true;
+    }
+
+    return IsEmpty;
 }
 
 // Display linked list
@@ -99,3 +106,4 @@ int main()
 
     return 0;
 }
+
