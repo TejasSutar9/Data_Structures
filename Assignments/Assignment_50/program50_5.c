@@ -14,7 +14,8 @@ typedef struct node **PPNODE;
 // Insert a new node at the beginning
 void InsertFirst(PPNODE first, int no)
 {
-    PNODE newn = (PNODE)malloc(sizeof(NODE));
+    PNODE newn = NULL;
+    newn = (PNODE)malloc(sizeof(NODE));
 
     newn->data = no;
     newn->next = NULL;
@@ -101,4 +102,5 @@ int main()
 
     return 0;
 }
+
 
