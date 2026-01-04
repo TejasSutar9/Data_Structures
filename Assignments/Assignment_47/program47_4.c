@@ -38,35 +38,27 @@ void DisplayPrime(PNODE first)
     printf("Prime numbers in the linked list:\n");
     printf("---------------------------------\n");
 
-    while (first != NULL)
+     while(first != NULL)
     {
-        int iNum = first->data;
-        int isPrime = 1;
+        int iNum = first -> data;
+        int temp = iNum;
+        int iCount = 0;
 
-        if (iNum <= 1)
+        for(int iCnt = 2; iCnt < iNum; iCnt++)
         {
-            isPrime = 0;
-        }
-        else
-        {
-            for (int i = 2; i * i <= iNum; i++)
+            if(iNum % iCnt == 0)
             {
-                if (iNum % i == 0)
-                {
-                    isPrime = 0;
-                    break;
-                }
+                iCount++;
             }
         }
 
-        if (isPrime)
+        if(iCount == 0)
         {
             printf("%d\t", iNum);
         }
-
-        first = first->next;
+        
+        first = first -> next;
     }
-    printf("\n");
 }
 
 // Display linked list normally
@@ -119,3 +111,4 @@ int main()
 
     return 0;
 }
+
