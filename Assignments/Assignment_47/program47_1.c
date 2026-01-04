@@ -37,6 +37,7 @@ void DisplayReverse(PNODE first)
 {
     int Arr[100];  // temporary array
     int i = 0;
+    int iCnt = 0;
 
     while (first != NULL)
     {
@@ -46,7 +47,7 @@ void DisplayReverse(PNODE first)
     }
 
     printf("Linked list in reverse order:\n");
-    for (int iCnt = i - 1; iCnt >= 0; iCnt--)
+    for (iCnt = i - 1; iCnt >= 0; iCnt--)
     {
         printf("| %d | -> ", Arr[iCnt]);
     }
@@ -103,3 +104,4 @@ int main()
 
     return 0;
 }
+
