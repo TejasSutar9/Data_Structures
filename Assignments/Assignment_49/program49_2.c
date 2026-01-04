@@ -36,15 +36,18 @@ void InsertFirst(PPNODE first, int no)
 // Checks whether all elements in the linked list are positive
 bool CheckAllPositive(PNODE first)
 {
+    bool isPositive = true;
+
     while (first != NULL)
     {
         if (first->data < 0)
         {
-            return false;
+            isPositive = false;
+            break;
         }
         first = first->next;
     }
-    return true;
+    return isPositive;
 }
 
 // Displays all elements of the linked list
@@ -103,3 +106,4 @@ int main()
 
     return 0;
 }
+
