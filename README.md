@@ -1,18 +1,15 @@
 # Data Structures
 
-This repository contains data structure implementations in multiple programming languages.
+This repository contains implementations of fundamental data structures using C, C++, and Java.
 
-## Languages Covered
-- C
-- C++
-- Java
+Topics Covered
+- Arrays
+- Linked Lists
+- Stacks
+- Queues
+- Trees
+- Searching Algorithms
+- Sorting Algorithms
 
-## Data Structures Implemented
-- Linked List
-  - Singly Linear
-  - Singly Circular
-  - Doubly Linear
-  - Doubly Circular
-
-Each program is written for learning and practice purposes.
-
+Purpose
+To strengthen problem-solving skills and understanding of data structures.
